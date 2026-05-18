@@ -19,12 +19,13 @@ const Services = () => {
           podemos impulsionar o sucesso da sua empresa com nossas soluções
           inovadoras e personalizadas.
         </p>
-        <div className="my-12 flex flex-wrap justify-between items-center gap-8"> 
-          <img src='/visa.png' alt="logo clientes" className="w-[55px] h-[50px] max-w-full"/>
-          <img src='/huawei.png' alt="logo clientes" className="w-[55px] h-[50px] max-w-full"/>
-          <img src='/meta.png' alt="logo clientes" className="w-[55px] h-[50px] max-w-full"/>
-          <img src='/netflix.png' alt="logo clientes" className="w-[55px] h-[50px] max-w-full"/>
-          <img src='/discord.png' alt="logo clientes" className="w-[55px] h-[50px] max-w-full"/>
+        <div className="my-12 flex flex-wrap justify-center items-center gap-12 md:gap-32"> 
+          <img src='/logoDraAdvogados.svg' alt="logo clientes" className="w-[55px] h-[50px] max-w-full object-contain"/>
+          <img src='/romanoElameiraoLogo.jpeg' alt="logo clientes" className="w-[55px] h-[50px] max-w-full object-contain"/>
+          <img src='/altechLogo.jpeg' alt="logo clientes" className="w-[55px] h-[50px] max-w-full object-contain"/>
+          <img src='/destino-latinoLogo.png' alt="logo clientes" className="w-[55px] h-[50px] max-w-full object-contain"/>
+          <img src='/LogoIrmaoFandango.jpeg' alt="logo clientes" className="w-[55px] h-[50px] max-w-full object-contain"/>
+          <img src='/Logo-InstalaRioRodape.png' alt="logo clientes" className="w-[55px] h-[50px] max-w-full object-contain"/>
         </div>
       </div>
 
@@ -35,7 +36,7 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid:cols-1 md:w-11/12 mx-auto gap-12">
+      <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12">
         {
           services.map(service => <div key={service.id} className="px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 
           rounded-md shadow cursor-pointer hover:-translate-y-5 hover:border-b-4 hover:border-purple-700 transition-all 

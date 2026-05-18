@@ -2,15 +2,16 @@ import React from "react";
 import { Carousel } from "flowbite-react";
 import apertoMao from "/aperto_de_mao_man.svg";
 import imgApp from "/img_app.png";
+import osTresEmCadeiras from "/osTresEmCadeiras.jpg";  
 
 const Home = () => {
   return (
     <div className="bg-neutralSilver" id="home">
-      <div className="px-4 lg:px-14 max-w-screen-2x1 mx-auto min-h-screen h-screen">
+      <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen overflow-hidden">
         <Carousel className="w-full mx-auto">
-          <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
-            <div>
-              <img src={apertoMao} alt="duas pessoas apertando as mãos" />
+          <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 overflow-hidden">
+            <div className="overflow-hidden">
+              <img src={osTresEmCadeiras} alt="três pessoas em cadeiras" className="w-[400px] max-h-[45vh] max-w-full object-contain" />
             </div>
             <div className="md:w-1/2">
               <h1 className="text-5xl font-semibold mb-4 text-neutralDGray md:w-3/4 leading-snug">
@@ -34,9 +35,9 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
+          <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 overflow-hidden">
             <div>
-              <img src={imgApp}  alt="imagem do aplicativo" className="w-[400px] h-[600px] max-w-full" />
+              <img src={imgApp}  alt="imagem do aplicativo" className="w-[400px] max-h-[45vh] max-w-full object-contain" />
             </div>
             <div className="md:w-1/2">
               <h1 className="text-5xl font-semibold mb-4 text-neutralDGray md:w-3/4 leading-snug">

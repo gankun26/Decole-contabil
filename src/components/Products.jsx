@@ -9,7 +9,7 @@ const Products = () => {
             <img
               src="/app_decole.png"
               alt="app decole na palma da mao"
-              className="w-[500] h-[500] max-w-full"
+              className="w-[500px] h-[500px] max-w-full object-contain"
             />
           </div>
           <div className="md:w-3/5 mx-auto">
@@ -58,7 +58,9 @@ const Products = () => {
           <div className="md:w-1/2 mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12">
             <div className="space-y-8">
               <div className="flex items-center gap-4">
-                <img src="/zapzapIcon.svg" alt="icon zap" className="w-[55px] h-[50px] max-w-full"/>
+                <a href="https://api.whatsapp.com/send?phone=5521982894609" target="_blank" rel="noopener noreferrer">
+                  <img src="/zapzapIcon.svg" alt="icon zap" className="w-[55px] h-[50px] max-w-full cursor-pointer hover:opacity-75 transition-opacity"/>
+                </a>
                 <div>
                     <h4 className="text-2xl text-neutralDGray font-semibold">
                     Bernardo Almeida
@@ -68,7 +70,9 @@ const Products = () => {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <img src="/zapzapIcon.svg" alt="icon zap" className="w-[55px] h-[50px] max-w-full"/>
+                <a href="https://api.whatsapp.com/send?phone=5521991010288" target="_blank" rel="noopener noreferrer">
+                  <img src="/zapzapIcon.svg" alt="icon zap" className="w-[55px] h-[50px] max-w-full cursor-pointer hover:opacity-75 transition-opacity"/>
+                </a>
                 <div>
                     <h4 className="text-2xl text-neutralDGray font-semibold">
                     Leonardo Pereira
@@ -78,7 +82,9 @@ const Products = () => {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <img src="/zapzapIcon.svg" alt="icon zap" className="w-[55px] h-[50px] max-w-full"/>
+                <a href="https://api.whatsapp.com/send?phone=5521981770066" target="_blank" rel="noopener noreferrer">
+                  <img src="/zapzapIcon.svg" alt="icon zap" className="w-[55px] h-[50px] max-w-full cursor-pointer hover:opacity-75 transition-opacity"/>
+                </a>
                 <div>
                     <h4 className="text-2xl text-neutralDGray font-semibold">
                     Thiago Santana
