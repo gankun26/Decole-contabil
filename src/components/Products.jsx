@@ -101,6 +101,8 @@ const Products = () => {
                     <h4 className="text-2xl text-neutralDGray font-semibold">
                     Escritório
                     </h4>
+                    <p>Atendimento Geral</p>
+                    <p>(21) 96811-4544</p>
                 </div>
               </div>
             </div>
