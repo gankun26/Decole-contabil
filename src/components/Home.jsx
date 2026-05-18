@@ -27,7 +27,7 @@ const Home = () => {
                 parceiros de negócios através de um sistema com tecnologia de
                 ponta e um atendimento personalizado.
               </p>
-              <a href="https://api.whatsapp.com/send?phone=5521981770066" target="_blank">
+              <a href="https://api.whatsapp.com/send?phone=5521968114544" target="_blank">
               <button className="btn-primary">
                   Entre em contato
               </button>
@@ -52,10 +52,8 @@ const Home = () => {
                 Nosso app de contabilidade oferece uma solução simples e eficiente para gerenciar suas finanças empresariais, 
                 eliminando a burocracia e permitindo que você foque no que realmente importa: o crescimento do seu negócio. 
               </p>
-              <a href="https://play.google.com/store/apps/details?id=com.decoleassessoria" target="_blank">
-              <button className="btn-primary">
-                  Baixar agora
-              </button>
+              <a href="https://play.google.com/store/apps/details?id=com.decoleassessoria" target="_blank" rel="noopener noreferrer">
+                <img src="/disponivelNaPlayStore.png" alt="Disponível no Google Play" className="h-14 max-w-full object-contain hover:opacity-80 transition-opacity rounded-xl" />
               </a>
             </div>
           </div>

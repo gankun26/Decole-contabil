@@ -38,11 +38,9 @@ const Products = () => {
             <p className="md:w-3/4 text-sm text-neutralDGray mb-6">
             • Comunicação rápida e prática com suporte direto pelo APP{" "}
             </p>
-            <a href="https://play.google.com/store/apps/details?id=com.decoleassessoria" target="_blank">
-              <button className="btn-primary">
-                  Baixar agora
-              </button>
-              </a>
+            <a href="https://play.google.com/store/apps/details?id=com.decoleassessoria" target="_blank" rel="noopener noreferrer">
+              <img src="/disponivelNaPlayStore.png" alt="Disponível no Google Play" className="h-14 max-w-full object-contain hover:opacity-80 transition-opacity rounded-xl" />
+            </a>
           </div>
         </div>
       </div>

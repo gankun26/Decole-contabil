@@ -24,7 +24,7 @@ function About() {
                 Zelamos pela confiança, sigilo, respeito, ética profissional e pessoal, segurança e 
                 transparência para os nossos parceiros, temos comprometimento com a pontualidade e assiduidade e com os serviços prestados.
                 </p>
-                <a href="https://api.whatsapp.com/send?phone=5521981770066" target="_blank">
+                <a href="https://api.whatsapp.com/send?phone=5521968114544" target="_blank">
               <button className="btn-primary">
                   Entre em contato
               </button>
