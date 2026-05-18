@@ -21,7 +21,7 @@ const Products = () => {
             • Sistema 100% automatizado
             </p>
             <p className="md:w-3/4 text-sm text-neutralDGray mb-6">
-            • Dashboard sobre a saúde financeira da sua empres
+            • Dashboard sobre a saúde financeira da sua empresa
             </p>
             <p className="md:w-3/4 text-sm text-neutralDGray mb-6" >
             • Acesso a qualquer documento que você precisar (Contrato social,
@@ -65,7 +65,7 @@ const Products = () => {
                     <h4 className="text-2xl text-neutralDGray font-semibold">
                     Bernardo Almeida
                     </h4>
-                    <p>Fiscal | Departamento Pessoal</p>
+                    <p>Legalização | Departamento Pessoal</p>
                     <p>(21) 98289-4609</p>
                 </div>
               </div>
@@ -77,7 +77,7 @@ const Products = () => {
                     <h4 className="text-2xl text-neutralDGray font-semibold">
                     Leonardo Pereira
                     </h4>
-                    <p>Contabil | Legalização</p>
+                    <p>Contábil | Fiscal</p>
                     <p>(21)  99101-0288</p>
                 </div>
               </div>
@@ -89,8 +89,18 @@ const Products = () => {
                     <h4 className="text-2xl text-neutralDGray font-semibold">
                     Thiago Santana
                     </h4>
-                    <p>Financeiro | Comercia</p>
+                    <p>Financeiro | Comercial</p>
                     <p>(21) 98177-0066</p>
+                </div>
+              </div>
+                <div className="flex items-center gap-4">
+                <a href="https://api.whatsapp.com/send?phone=5521968114544" target="_blank" rel="noopener noreferrer">
+                  <img src="/zapzapIcon.svg" alt="icon zap" className="w-[55px] h-[50px] max-w-full cursor-pointer hover:opacity-75 transition-opacity"/>
+                </a>
+                <div>
+                    <h4 className="text-2xl text-neutralDGray font-semibold">
+                    Escritório
+                    </h4>
                 </div>
               </div>
             </div>
