@@ -25,7 +25,7 @@ const Products = () => {
             </p>
             <p className="md:w-3/4 text-sm text-neutralDGray mb-6" >
             • Acesso a qualquer documento que você precisar (Contrato social,
-              alvará CND, CPNJ, entre outros)
+              alvará CND, CNPJ, entre outros)
             </p>
             <p className="md:w-3/4 text-sm text-neutralDGray mb-6">
             • Alertas e lembretes com prazos para pagamento das guias de taxas

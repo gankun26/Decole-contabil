@@ -2,10 +2,10 @@ import React from "react";
 
 const Services = () => {
   const services =[
-    {id: 1, title: "LEGALIZAÇÃO", description: " Elaboração de contrato social, constituição de empresa, alterações contratuais, distrato social/baixa de CNPJ, emissão/renovação de certificado digital e certidões negativas junto à Órgãos Públicos ", image: "/legalizacao.png"},
+    {id: 1, title: "LEGALIZAÇÃO", description: " Elaboração de contrato social, constituição de empresa, alterações contratuais, distrato social/baixa de CNPJ, emissão/renovação de certificado digital e certidões negativas junto à Órgãos Públicos. ", image: "/legalizacao.png"},
     {id: 2, title: "TRIBUTÁRIO", description: "Análise econômica para enquadramento tributário, orientação e emissão de notas fiscais, apuração de impostos, emissão e validação de guias, envio das obrigações acessórias, regularização e parcelamento de dívidas e recuperação tributária. ", image: "/tributario.png"},
     {id: 3, title: "DEPARTAMENTO PESSOAL", description: "Gestão da folha de pagamento, contracheque, admissões de funcionários, demissões e desligamentos, E-social, agendamento de férias, cálculo e emissão de encargos trabalhistas, envio da comunicação de acidente de trabalho, E-social doméstica. ", image: "/depPessoal.png"},
-    {id: 4, title: "CONTABILIDADE", description: "Contabilização das operações financeiras e patrimoniais da companhia, emissão de balanço patrimonial, DRE, DMPL, SPED Contábil, distribuição de lucros, DIRF e demonstração de ajuste anual (IRPF", image: "/contabilidade.png"},
+    {id: 4, title: "CONTABILIDADE", description: "Contabilização das operações financeiras e patrimoniais da companhia, emissão de balanço patrimonial, DRE, DMPL, SPED Contábil, distribuição de lucros, DIRF e demonstração de ajuste anual (IRPF).", image: "/contabilidade.png"},
     {id: 5, title: "MEI", description: "Consultoria e acompanhamento das receitas e despesas, abertura de CNPJ, alvará de licença para estabelecimento e validação para emissão de nota fiscal, parcelamento de guias em atraso, geração de guia mensal, declaração anual, encerramento de MEI.", image: "/mei.png"},
     {id: 6, title: "BPO", description: "Gerenciamento de receitas e despesa com ênfase em redução de custos, evolução patrimonial, controle de pagamentos e recebimentos, fluxo de caixa, gestão de indicadores e análise de crédito.", image: "/bpo.png"},
   ]

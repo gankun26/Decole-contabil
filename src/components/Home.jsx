@@ -9,12 +9,12 @@ const Home = () => {
     <div className="bg-neutralSilver" id="home">
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen overflow-hidden">
         <Carousel className="w-full mx-auto">
-          <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 overflow-hidden">
+          <div className="my-4 md:my-8 py-4 md:py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-6 md:gap-12 overflow-hidden">
             <div className="overflow-hidden">
-              <img src={osTresEmCadeiras} alt="três pessoas em cadeiras" className="w-[400px] max-h-[45vh] max-w-full object-contain" />
+              <img src={osTresEmCadeiras} alt="três pessoas em cadeiras" className="w-[280px] md:w-[400px] max-h-[35vh] md:max-h-[45vh] max-w-full object-contain" />
             </div>
             <div className="md:w-1/2">
-              <h1 className="text-5xl font-semibold mb-4 text-neutralDGray md:w-3/4 leading-snug">
+              <h1 className="text-2xl md:text-5xl font-semibold mb-4 text-neutralDGray md:w-3/4 leading-snug">
                 Contabilidade simples, sem{" "}
                 <span className="text-blackPrimary leading-snug">
                   burocracias.
@@ -35,12 +35,12 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12 overflow-hidden">
+          <div className="my-4 md:my-8 py-4 md:py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-6 md:gap-12 overflow-hidden">
             <div>
-              <img src={imgApp}  alt="imagem do aplicativo" className="w-[400px] max-h-[45vh] max-w-full object-contain" />
+              <img src={imgApp}  alt="imagem do aplicativo" className="w-[280px] md:w-[400px] max-h-[35vh] md:max-h-[45vh] max-w-full object-contain" />
             </div>
             <div className="md:w-1/2">
-              <h1 className="text-5xl font-semibold mb-4 text-neutralDGray md:w-3/4 leading-snug">
+              <h1 className="text-2xl md:text-5xl font-semibold mb-4 text-neutralDGray md:w-3/4 leading-snug">
                 Temos tudo que você precisa na palma da sua mão,{" "}
                 <span className="text-blackPrimary leading-snug">
                   contabilidade 100% digital.
