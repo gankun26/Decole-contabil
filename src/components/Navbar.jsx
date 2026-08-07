@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import logo from '/Icone_preto_Decole_fundo_transparente.png'
-//import { Link } from 'react-router-dom';
+import logoPreto from '/Icone_preto_Decole_fundo_transparente.png'
+import logoBranco from '/iconebrancofundotransparente.png'
 import { Link } from 'react-scroll';
 
 import { FaXmark, FaBars } from "react-icons/fa6";
@@ -26,11 +26,11 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.addEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-  });
+  }, []);
 
-  const navItems = [ 
+  const navItems = [
     { link: "Home", path: "home" },
     { link: "Serviços", path: "services" },
     { link: "Sobre", path: "about" },
@@ -39,15 +39,17 @@ const Navbar = () => {
   ];
 
   return(
-    <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0">
-        <nav className={`py-4 lg:px-14 px-4 ${isSticky ? "sticky top-0 left-0 right-0 border-b bg-white duration-300" : ""}`}>
+    <header className="w-full fixed top-0 left-0 right-0">
+        <nav className={`py-4 lg:px-14 px-4 transition-all duration-300 ${isSticky ? "bg-white/90 backdrop-blur-md border-b border-neutral-200 shadow-sm" : "bg-transparent"}`}>
             <div className="flex justify-between items-center text-base gap-8 ">
-                <a href="" className="text-2xl font-semibold flex items-center space-x-3"><img src={logo}
-                alt="" className="w-10 inline-block items-center"/><span className="text-[#263238]">Decole</span></a>
+                <a href="" className="text-2xl font-semibold flex items-center space-x-3">
+                  <img src={isSticky ? logoPreto : logoBranco} alt="logo Decole" className="w-10 inline-block items-center"/>
+                  <span className={`tracking-tight transition-colors duration-300 ${isSticky ? "text-gray900" : "text-white"}`}>Decole</span>
+                </a>
                 <ul className="md:flex space-x-12 hidden">
                     {
                         navItems.map(({link, path}) => <Link  to={path} key={path} spy={true} smooth={true} offset={-100}
-                        className="block cursor-pointer text-base text-gray900 hover:text-blackPrimary first:font-medium"
+                        className={`block cursor-pointer text-sm font-medium transition-colors duration-300 ${isSticky ? "text-gray900 hover:text-neutralGray" : "text-white/80 hover:text-white"}`}
                         >{link}</Link>)
                     }
                 </ul>
@@ -56,19 +58,20 @@ const Navbar = () => {
                     <button className="hidden">Sign up</button>
                 </div>
                 <div className="md:hidden">
-                    <button 
+                    <button
                         onClick={toggleMenu}
-                        className="text-neutralDGray focus:outline-none focus:text-gray-500">
+                        className={`focus:outline-none transition-colors duration-300 ${isSticky ? "text-gray900" : "text-white"}`}>
                         {
                           isMenuOpen ? (<FaXmark className="h-6 w-6"/>) : (<FaBars className="h-6 w-6 "/>)
                         }
                     </button>
                 </div>
             </div>
-            <div className={`space-y-4 px-4 mt-16 py-7 bg-blackPrimary ${isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"}`}>
+            <div className={`space-y-4 px-6 mt-16 py-7 bg-blackPrimary border-b border-white/10 ${isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"}`}>
                     {
-                        navItems.map(({link, path}) => <Link  to={path} key={path} spy={true} smooth={true} offset={-100} 
-                        className="block text-base text-neutralSilver hover:text-neutralDGray first:font-medium"
+                        navItems.map(({link, path}) => <Link  to={path} key={path} spy={true} smooth={true} offset={-100}
+                        onClick={toggleMenu}
+                        className="block cursor-pointer text-base font-medium text-white/80 hover:text-white transition-colors"
                         >{link}</Link>)
                     }
             </div>

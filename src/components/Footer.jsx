@@ -1,35 +1,37 @@
 import React from 'react'
-import { Footer } from "flowbite-react";
-import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
-import logo from '/Icone_preto_Decole_fundo_transparente.png'
+import { BsInstagram, BsLinkedin } from "react-icons/bs";
+import logoBranco from '/iconebrancofundotransparente.png'
+import FloatingIcons from "./FloatingIcons";
 
 const MyFooter = () => {
   return (
-    <Footer container>
-    <div className="w-full">
-      <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-        <div className='space-y-4 mb-8'>
-        <a href="" className="text-2xl font-semibold flex items-center space-x-3"><img src={logo}
-                alt="" className="w-10 inline-block items-center"/><span className="text-[#263238]">Decole</span>
-        </a>
-        <div>
-          <p className='text-neutralDGray'>Todos os direitos reservados.</p>
+    <footer className="bg-[#050505] border-t border-white/10 relative overflow-hidden">
+      <FloatingIcons count={4} />
+      <div className="relative max-w-screen-2xl mx-auto px-4 lg:px-14 py-12">
+        <div className="flex flex-col sm:flex-row justify-between gap-8">
+          <div className='space-y-4'>
+            <a href="" className="text-2xl font-semibold flex items-center space-x-3">
+              <img src={logoBranco} alt="logo Decole" className="w-10 inline-block items-center"/>
+              <span className="text-white tracking-tight">Decole</span>
+            </a>
+            <p className='text-neutral-500 text-sm'>Todos os direitos reservados.</p>
+          </div>
+          <div className="flex items-start space-x-5 sm:justify-end">
+            <a href="https://www.instagram.com/decolecontabil?igsh=bXQ2bzJoMjR2OXB6" target="_blank" rel="noopener noreferrer"
+              className="text-white/60 hover:text-white transition-colors">
+              <BsInstagram className="w-5 h-5" />
+            </a>
+            <a href="https://www.linkedin.com/company/decole-assessoria-cont%C3%A1bil/" target="_blank" rel="noopener noreferrer"
+              className="text-white/60 hover:text-white transition-colors">
+              <BsLinkedin className="w-5 h-5" />
+            </a>
+          </div>
         </div>
-        </div>
-        <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
-
+        <div className="mt-10 pt-6 border-t border-white/10">
+          <p className="text-neutral-500 text-sm">© 2026 Decole. Contabilidade simples, sem burocracia.</p>
         </div>
       </div>
-      <Footer.Divider />
-      <div className="w-full sm:flex sm:items-center sm:justify-between">
-        <Footer.Copyright  by="Decole." year={2026} />
-        <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-          <Footer.Icon href="https://www.instagram.com/decolecontabil?igsh=bXQ2bzJoMjR2OXB6" target="_blank" icon={BsInstagram} />
-          <Footer.Icon href="https://www.linkedin.com/company/decole-assessoria-cont%C3%A1bil/" target="_blank" icon={BsLinkedin} />
-        </div>
-      </div>
-    </div>
-  </Footer>
+    </footer>
   )
 }
 

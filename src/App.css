@@ -2,12 +2,84 @@
 
 body{
   font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 header{
   z-index: 10001 !important;
 }
 
+/* ---------- Botões ---------- */
 .btn-primary{
-  @apply px-7 py-2 bg-blackPrimary text-white rounded hover:bg-neutralDGray transition-all duration-300 hover:-translate-y-4;
+  @apply inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-blackPrimary text-white text-sm md:text-base font-semibold shadow-lg shadow-black/10 transition-all duration-300 hover:bg-neutralDGray hover:-translate-y-0.5;
+}
+
+.btn-light{
+  @apply inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-white text-blackPrimary text-sm md:text-base font-semibold shadow-lg shadow-black/30 transition-all duration-300 hover:bg-neutral-200 hover:-translate-y-0.5;
+}
+
+.btn-ghost-light{
+  @apply inline-flex items-center gap-2 text-sm md:text-base font-semibold text-white/80 transition-colors duration-300 hover:text-white;
+}
+
+/* ---------- Badges de seção (kickers) ---------- */
+.kicker{
+  @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full border text-xs font-semibold uppercase tracking-[0.2em];
+}
+
+.kicker-on-dark{
+  @apply border-white/20 bg-white/5 text-white/70;
+}
+
+.kicker-on-light{
+  @apply border-neutral-200 bg-neutralSilver text-neutralDGray;
+}
+
+/* ---------- Texto com gradiente ---------- */
+.text-gradient-on-dark{
+  @apply bg-gradient-to-r from-white via-neutral-300 to-neutral-500 bg-clip-text text-transparent;
+}
+
+.text-gradient-on-light{
+  @apply bg-gradient-to-r from-blackPrimary via-neutral-700 to-neutral-400 bg-clip-text text-transparent;
+}
+
+/* ---------- Ícones flutuantes (setas / contabilidade) ---------- */
+.float-icon{
+  position: absolute;
+  bottom: -48px;
+  color: rgba(255, 255, 255, 0.10);
+  animation: float-up linear infinite;
+}
+
+@keyframes float-up{
+  0%   { transform: translateY(0) rotate(0deg); opacity: 0; }
+  8%   { opacity: 1; }
+  85%  { opacity: 1; }
+  100% { transform: translateY(-110vh) rotate(8deg); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .float-icon{ display: none; }
+}
+
+/* ---------- Fundo claro com gradiente e pontos sutis ---------- */
+.section-light{
+  background-color: #ffffff;
+  background-image:
+    radial-gradient(ellipse 60% 45% at 15% 0%, rgba(0, 0, 0, 0.05), transparent),
+    radial-gradient(ellipse 50% 40% at 90% 100%, rgba(0, 0, 0, 0.04), transparent),
+    radial-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: auto, auto, 28px 28px;
+}
+
+/* ---------- Fundo escuro com brilho e pontos ---------- */
+.section-dark{
+  background-color: #050505;
+  background-image:
+    radial-gradient(ellipse 70% 45% at 75% -5%, rgba(255, 255, 255, 0.09), transparent),
+    radial-gradient(circle at 12% 85%, rgba(255, 255, 255, 0.05), transparent 45%),
+    radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: auto, auto, 28px 28px;
 }
