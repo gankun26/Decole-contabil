@@ -42,7 +42,7 @@ const Products = () => {
                   <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-blackPrimary text-white flex items-center justify-center">
                     <FaCheck className="w-2.5 h-2.5" />
                   </span>
-                  <p className="text-base text-neutralGray leading-relaxed">{item}</p>
+                  <p className="text-base text-neutralDGray leading-relaxed">{item}</p>
                 </li>
               ))}
             </ul>

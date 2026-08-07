@@ -15,7 +15,7 @@ const Services = () => {
       <div className="text-center my-8">
         <span className="kicker kicker-on-light mb-6">Clientes</span>
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray900 mb-4">Alguns de nossos clientes</h2>
-        <p className="text-neutralGray leading-relaxed max-w-2xl mx-auto">
+        <p className="text-neutralDGray leading-relaxed max-w-2xl mx-auto">
           Junte-se aos nossos mais de 100 clientes satisfeitos e descubra como
           podemos impulsionar o sucesso da sua empresa com nossas soluções
           inovadoras e personalizadas.
@@ -35,7 +35,7 @@ const Services = () => {
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray900 mb-4">
           Tudo que sua empresa precisa, <span className="text-gradient-on-light">em um só lugar</span>
         </h2>
-        <p className="text-neutralGray leading-relaxed">
+        <p className="text-neutralDGray leading-relaxed">
           Confira abaixo os principais serviços prestados pela Decole.
         </p>
       </div>
@@ -50,7 +50,7 @@ const Services = () => {
                 <img src={service.image} className="h-10 w-10 object-contain" alt="icons de serviços"/>
                 </div>
                 <h4 className="text-lg font-bold tracking-wide text-gray900 mb-3 px-2">{service.title}</h4>
-                <p className="text-sm text-neutralGray leading-relaxed">{service.description}</p>
+                <p className="text-sm text-neutralDGray leading-relaxed">{service.description}</p>
               </div>
           </div>)
         }

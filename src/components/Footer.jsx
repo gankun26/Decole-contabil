@@ -14,7 +14,7 @@ const MyFooter = () => {
               <img src={logoBranco} alt="logo Decole" className="w-10 inline-block items-center"/>
               <span className="text-white tracking-tight">Decole</span>
             </a>
-            <p className='text-neutral-500 text-sm'>Todos os direitos reservados.</p>
+            <p className='text-neutral-400 text-sm'>Todos os direitos reservados.</p>
           </div>
           <div className="flex items-start space-x-5 sm:justify-end">
             <a href="https://www.instagram.com/decolecontabil?igsh=bXQ2bzJoMjR2OXB6" target="_blank" rel="noopener noreferrer"
@@ -28,7 +28,7 @@ const MyFooter = () => {
           </div>
         </div>
         <div className="mt-10 pt-6 border-t border-white/10">
-          <p className="text-neutral-500 text-sm">© 2026 Decole. Contabilidade simples, sem burocracia.</p>
+          <p className="text-neutral-400 text-sm">© 2026 Decole. Contabilidade simples, sem burocracia.</p>
         </div>
       </div>
     </footer>

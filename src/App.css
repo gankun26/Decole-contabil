@@ -38,11 +38,11 @@ header{
 
 /* ---------- Texto com gradiente ---------- */
 .text-gradient-on-dark{
-  @apply bg-gradient-to-r from-white via-neutral-300 to-neutral-500 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-white via-neutral-300 to-neutral-400 bg-clip-text text-transparent;
 }
 
 .text-gradient-on-light{
-  @apply bg-gradient-to-r from-blackPrimary via-neutral-700 to-neutral-400 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-blackPrimary via-neutral-800 to-neutral-600 bg-clip-text text-transparent;
 }
 
 /* ---------- Ícones flutuantes (setas / contabilidade) ---------- */

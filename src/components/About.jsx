@@ -26,14 +26,14 @@ function About() {
                 Uma visão <span className='text-gradient-on-light'>inovadora</span> sobre o conceito de um
                 escritório de contabilidade.
                 </h2>
-                <p className='md:w-3/4 text-base text-neutralGray leading-relaxed mb-6'>
+                <p className='md:w-3/4 text-base text-neutralDGray leading-relaxed mb-6'>
                 Temos como missão criar e cultivar valores para nossos clientes atuando sempre
                 em conformidade com a legislação, auxiliando-os com informações seguras
                 para tomadas de decisões. Nossa visão é ser referência pelos serviços prestados
                 em contabilidade, ser reconhecida pela ênfase na ética e na responsabilidade
                 social, na prestação dos serviços de  qualidade e eficiência.
                 </p>
-                <p className='md:w-3/4 text-base text-neutralGray leading-relaxed mb-8'>
+                <p className='md:w-3/4 text-base text-neutralDGray leading-relaxed mb-8'>
                 Zelamos pela confiança, sigilo, respeito, ética profissional e pessoal, segurança e
                 transparência para os nossos parceiros, temos comprometimento com a pontualidade e assiduidade e com os serviços prestados.
                 </p>
@@ -53,7 +53,7 @@ function About() {
               <h2 className='text-3xl md:text-4xl font-bold tracking-tight text-gray900 mb-4 md:w-3/4 leading-tight'>
                 Estamos sediados no <span className='text-gradient-on-light'>Worldwide Office</span>
               </h2>
-              <p className='text-neutralGray leading-relaxed md:w-2/3'>
+              <p className='text-neutralDGray leading-relaxed md:w-2/3'>
                 N 200 BL 1B Sala 1009 a 1013 — Jacarepaguá, Rio de Janeiro.
               </p>
             </div>
